@@ -1,0 +1,23 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Final results{{ endblock }}
+
+{{ block content }}
+
+<h4>
+Result after playing all {{C.NUM_ROUNDS}} rounds is:    
+</h4>
+
+<p>
+    Your final wallet amount is: INR <b>{{ player.wallet}}.</b>
+</p>
+
+<p>
+    You have won <b>{{player.num_wins}}</b> rounds out of <b>{{C.NUM_ROUNDS}}</b> rounds !!
+    
+</p>
+<p>
+    
+    {{next_button}}
+</p>
+
+{{ endblock }}

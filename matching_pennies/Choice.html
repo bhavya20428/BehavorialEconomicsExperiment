@@ -1,0 +1,22 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Round {{ subsession.round_number }} of {{ C.NUM_ROUNDS }}{{ endblock }}
+
+{{ block content }}
+
+<h4>Instructions:</h4>
+<p>
+    Choose either Heads or Tails.
+</p>
+
+<p>
+
+{{ formfields }}
+    
+
+</p>
+<p>
+{{ next_button }}    
+</p>
+
+
+{{ endblock }}

@@ -1,0 +1,22 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Intermediate result:{{ endblock }}
+
+{{ block content }}
+
+<h4>
+     Results after current round:
+
+</h4>
+<p>
+    You chose: <b>{{player.penny_side}}</b>
+    The flip was: <b>{{player.true_val}}</b>
+    
+</p>
+
+<p>
+    The new wallet amount is: <b>{{player.wallet}}</b>
+</p>
+
+{{ next_button }}
+
+{{ endblock }}

@@ -1,0 +1,17 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Instructions{{ endblock }}
+
+{{ block content }}
+<h5>Let's move to the last stage</h5>
+You have {{participant.wallet_value}} in your wallet. <br>
+You will be shown 5 investment options.<br>
+Each investment option will have the following information:
+<ul>
+    <li>Expected Return</li>
+    <li>Expected Risk</li>
+</ul>
+You need to choose any one of the options.
+
+{{ next_button }}
+
+{{ endblock }}

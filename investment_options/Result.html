@@ -1,0 +1,18 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Result{{ endblock }}
+
+{{ block content }}
+
+
+
+{{ if participant.investment_result == "LOSS" }}
+  Sorry, your investment failed.<br>
+  Your Total Wallet Value is now {{participant.wallet_value}}.
+{{ else }}
+  Congratulations!! Your investment was successful.<br>
+  Your Total Wallet Value is now {{participant.wallet_value}}.
+{{ endif }}
+<br>
+Thanks for playing!
+
+{{ endblock }}

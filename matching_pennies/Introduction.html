@@ -1,0 +1,19 @@
+{{ extends 'global/Page.html' }}
+{{ block title }}Introduction{{ endblock }}
+
+{{ block content }}
+
+In the beginning you will have <b>INR 300</b> as the starting wallet amount. <br>
+The interaction will have <b>{{C.NUM_ROUNDS}}</b> rounds. <br> <br>
+
+
+In each round you will be interacting with a computer-generated random coin flip <br> You have to select <b>'Heads'</b> or </b> <b>'Tails'</b> and then the random coin flip will be shown to you. 
+<br><br>
+If you guessed it correctly your wallet balance will increase by <b>INR 50</b> <br>
+else it will be decreased by <b>INR 50</b> after each round and your wallet amount will change accordingly after each round. 
+
+<br> <br>
+
+{{ next_button }}
+
+{{ endblock }}
